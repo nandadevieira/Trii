@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3e0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.container {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    text-align: center;
+}
+  
+.container h2 {
+    margin-bottom: 20px;
+    color: #4c4c4c;
+}
+  
+.form-row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+  
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+    flex: 1;
+}
+  
+.input-group label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    color: #777;
+    background: white;
+    padding: 0 5px;
+    pointer-events: none;
+}
+  
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;    
+}
+
+.input-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.input-group select {
+    cursor: pointer;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="%23007bff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-color: none;
+    background-size: 16px;
+    padding-right: 30px;
+    color: #777;
+    font-size: 14px;
+    background-color: white;
+    text-indent: 10px;
+}
+ 
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #007bff;
+}
+  
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: 0;
+    left: 10px;
+    font-size: 9px;
+    color: #007bff;
+    background: none;
+    padding: 0 5px;
+    transform: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}  
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+button:hover {
+    background: #0056b3;
+}
+  
+.sucesso {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
